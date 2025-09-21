@@ -89,8 +89,8 @@
         <h1>${TEXT}</h1>
         
         <h2>New Joint!</h2>
-        <p>I found my wife on a party yacht in Marbella! Her name is:</p>
-        <p>Vivi"</p>
+        <p>"I found my wife on a party yacht in Marbella! Her name is:"</p>
+        <p>"Vivi"</p>
             <!-- Insert an image or GIF -->
         <img src="${IMAGE}" alt="Instance Image">
         <p></p>
