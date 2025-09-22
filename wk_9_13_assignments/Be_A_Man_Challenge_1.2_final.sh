@@ -23,6 +23,9 @@ IMAGE="https://www.greatestphysiques.com/wp-content/uploads/2017/03/vivi-winkler
 TEXT="Be a Man Challenge 1.2"
 
 # AWS metadata
+
+### local webserver that every EC2 instance can talk to
+#below gives you api data
 BASE_URL="http://169.254.169.254/latest"
 HEADERS="X-aws-ec2-metadata-token"
 TOKEN=$(curl -X PUT "$BASE_URL/api/token" -H "$HEADERS-ttl-seconds: 3600" -s)
@@ -36,6 +39,8 @@ HOST_NAME=$(hostname -f)
 ####################################################################
 # Create index.html for Apache
 ####################################################################
+
+###cat - Writes a multi-line block of text to a file, great for generating HTML or config files from a script
 
 cat <<EOF > /var/www/html/index.html
 <!DOCTYPE html>
